@@ -14,7 +14,7 @@
   //#define VARIANT_USART       // Variant for Serial control via USART3 input
   //#define VARIANT_NUNCHUK     // Variant for Nunchuk controlled vehicle build
   //#define VARIANT_PPM         // Variant for RC-Remote with PPM-Sum Signal
-  //#define VARIANT_PWM         // Variant for RC-Remote with PWM Signal
+  #define VARIANT_PWM         // Variant for RC-Remote with PWM Signal
   //#define VARIANT_IBUS        // Variant for RC-Remotes with FLYSKY IBUS
   //#define VARIANT_HOVERCAR    // Variant for HOVERCAR build
   //#define VARIANT_HOVERBOARD  // Variant for HOVERBOARD build
@@ -142,7 +142,7 @@
 #define SPD_MODE        2               // [-] SPEED mode
 #define TRQ_MODE        3               // [-] TORQUE mode
 
-// Enable/Disable Motor
+ Enable/Disable Motor
 #define MOTOR_LEFT_ENA                  // [-] Enable LEFT motor.  Comment-out if this motor is not needed to be operational
 #define MOTOR_RIGHT_ENA                 // [-] Enable RIGHT motor. Comment-out if this motor is not needed to be operational
 
@@ -413,7 +413,7 @@
 // ############################# END OF VARIANT_PPM SETTINGS ############################
 
 
-// ################################# VARIANT_PWM SETTINGS ##############################
+ ################################# VARIANT_PWM SETTINGS ##############################
 #ifdef VARIANT_PWM
 /* ###### CONTROL VIA RC REMOTE ######
  * Right sensor board cable. Connect PA2 to channel 1 and PA3 to channel 2 on receiver.
